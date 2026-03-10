@@ -1,0 +1,7 @@
+[
+  {
+    "name": "@elemia/react adapter",
+    "path": "dist/index.js",
+    "limit": "5 KB"
+  }
+]

@@ -1,0 +1,11 @@
+.card {
+  color: red;
+}
+
+.card__title {
+  font-size: 14px;
+}
+
+.card--active {
+  display: block;
+}

@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "lib": ["ES2020", "DOM"],
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js"
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,13 @@
+[
+  {
+    "name": "Wrapper mode only",
+    "path": "dist/index.js",
+    "import": "{ block, cx }",
+    "limit": "2 KB"
+  },
+  {
+    "name": "Full build (both modes)",
+    "path": "dist/index.js",
+    "limit": "3 KB"
+  }
+]

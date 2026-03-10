@@ -1,0 +1,58 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+.npm/
+
+# Build and test artifacts
+dist/
+build/
+out/
+coverage/
+*.tsbuildinfo
+**/dist/
+**/build/
+**/out/
+**/coverage/
+**/*.tsbuildinfo
+
+# Tool caches
+.cache/
+.eslintcache
+.turbo/
+.vite/
+vitest-results/
+.nyc_output/
+
+# Test and report outputs
+playwright-report/
+test-results/
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files (commit only examples)
+.env
+.env.*
+!.env.example
+
+# Editor and IDE local state
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Internal planning and agent metadata (not for public sharing)
+.claude/
+docs/planning/
+docs/prd/
+docs/todos/
+docs/elemia-prototype-plan.md

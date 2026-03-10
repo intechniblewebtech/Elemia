@@ -1,0 +1,12 @@
+export { parseCSS, extractClassNames } from './parser/parse-css';
+export { inferSchema } from './parser/infer-schema';
+export { runCli } from './cli';
+export { generateTypes } from './commands/generate-types';
+export { check } from './commands/check';
+export { manifest } from './commands/manifest';
+export { compare } from './commands/compare';
+export { diffSemanticClasses, formatSemanticDiff } from './compare/diff';
+export { diffSchemaClasses, formatDiffTable, hasDrift, schemaClasses } from './validator/schema-validator';
+export { writeManifest } from './manifest/manifest-writer';
+export type { BlockManifest, ElemiaManifest } from './manifest/manifest-writer';
+export type { InferredBlock, InferredElement, InferredNaming, InferredSchema } from './types';

@@ -1,0 +1,7 @@
+[
+  {
+    "name": "@elemia/solid adapter",
+    "path": "dist/index.js",
+    "limit": "2 KB"
+  }
+]

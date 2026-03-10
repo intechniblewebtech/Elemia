@@ -1,0 +1,15 @@
+.card {
+  color: red;
+}
+
+.card__title {
+  font-size: 14px;
+}
+
+.cardTitle {
+  font-weight: 600;
+}
+
+.util-helper {
+  margin: 0;
+}

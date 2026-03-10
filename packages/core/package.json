@@ -1,0 +1,54 @@
+{
+  "name": "@elemia/core",
+  "version": "0.1.0",
+  "description": "Runtime-agnostic typed BEM class generation core for Elemia",
+  "keywords": [
+    "bem",
+    "css-modules",
+    "typescript",
+    "class-names"
+  ],
+  "author": "Intechnible Web Technologies",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "bench": "vitest bench bench/block.bench.ts && vitest bench bench/ts-compile.bench.ts",
+    "size": "size-limit",
+    "size:ci": "size-limit --why",
+    "test": "vitest run",
+    "test:types": "tsd",
+    "test:all": "vitest run && pnpm run test:types",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^12.0.1",
+    "size-limit": "^12.0.1",
+    "tsd": "^0.31.2",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2",
+    "vitest": "^3.1.1"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "tsd": {
+    "directory": "src"
+  }
+}

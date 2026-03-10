@@ -1,0 +1,11 @@
+.cardRoot {
+  color: red;
+}
+
+.cardTitle {
+  font-size: 14px;
+}
+
+.cardActive {
+  display: block;
+}

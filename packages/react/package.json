@@ -1,0 +1,56 @@
+{
+  "name": "@elemia/react",
+  "version": "0.1.0",
+  "description": "React adapter for Elemia BEM class generation",
+  "keywords": [
+    "bem",
+    "react",
+    "css-modules",
+    "typescript"
+  ],
+  "author": "Intechnible Web Technologies",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "size": "size-limit",
+    "size:ci": "size-limit --why",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@elemia/core": "workspace:*",
+    "@elemia/styles": "workspace:*",
+    "react": ">=17"
+  },
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^12.0.1",
+    "@testing-library/react": "^16.3.0",
+    "@types/react": "^19.0.0",
+    "jsdom": "^26.0.0",
+    "react": "^19.0.0",
+    "size-limit": "^12.0.1",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2",
+    "vitest": "^3.1.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

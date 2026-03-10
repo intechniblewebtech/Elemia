@@ -1,0 +1,7 @@
+[
+  {
+    "name": "@elemia/styles full build",
+    "path": "dist/index.js",
+    "limit": "3 KB"
+  }
+]
